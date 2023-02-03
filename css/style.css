@@ -90,6 +90,7 @@ img {
     margin: 3rem 0;
     padding: 3rem 0;
     color: #232946;
+    width: 100%;
     background: #eebbc3;
 }
 
@@ -128,12 +129,23 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
+ @media all and (min-width: 481px){
 
+    h1.text-center {  
+        width: 100vw;
+        font-size: 60px;
+        
+    }
+
+
+ }
 
 
  @media all and (max-width: 480px) {
 
     .container{
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -145,6 +157,10 @@ img {
     } 
     .steps .col {
         width: 100%;
+    }
+    .steps {
+        margin: 0rem 0;
+        margin-top: 20px;
     }
     .card{
         display: flex;
@@ -165,6 +181,10 @@ img {
         font-size: 40px;
     }
 
+    h2.text-center {
+        margin-top: 40px;
+    }
+
     h1.text-center {      
         font-size: 60px;
     }
@@ -175,5 +195,22 @@ img {
 
     .lessons .col img {
         height: auto;
+    }
+
+    .why-us {
+        margin-bottom: 0rem;
+    }
+
+    .why-us .col-left {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .why-us .col-right {
+        margin-top: 30px;
+        width: 100%;
+    }
+    section.why-us {
+        background-color: rgb(28, 28, 28);
     }
 }
