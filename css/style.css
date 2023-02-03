@@ -133,13 +133,47 @@ img {
 
  @media all and (max-width: 480px) {
 
+    .container{
+        width: 100%;
+    }
+
     .row {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         justify-content: center;
         
+    } 
+    .steps .col {
+        width: 100%;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .lessons .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 50px;
     }
 
-   
+    h2 {
+        font-size: 40px;
+    }
+
+    h1.text-center {      
+        font-size: 60px;
+    }
+
+    h3.title {
+        font-size: 60px;
+    }  
+
+    .lessons .col img {
+        height: auto;
+    }
 }
