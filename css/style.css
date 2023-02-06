@@ -130,8 +130,8 @@ img {
  ************************************************/
 
  @media all and (min-width: 481px){
-    body{
-        width: fit-content;
+    .container{
+        width: 100%;
     } 
     
     h1.text-center {  
